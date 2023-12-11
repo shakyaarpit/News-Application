@@ -1,8 +1,10 @@
-# React + Vite
+# News Application
+Create A News-Application using newsapi 
+Fully functional website 
+1- Search Functionality 
+2- Dark Mode
+3- Bookmarked 
+4- Signup Login Page
+5- Protected Router - before login than entry website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
