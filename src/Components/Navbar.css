@@ -1,0 +1,212 @@
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f3faff;
+  box-shadow: 0px 0px 4px #bbd0e2;
+  z-index: 999;
+  padding: 3px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin-left: 40px;
+}
+#profile {
+  font-weight: bolder;
+  font-size: 20px;
+  /* margin: 10px; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navlink {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  margin-right: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navlink:hover {
+  color: seagreen;
+}
+
+.input,
+.button {
+  padding: 7px 20px;
+  margin: 3px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 4px #bbd0e2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 1.5px solid seagreen;
+  background: transparent;
+  color: rgb(77, 155, 111);
+  cursor: pointer;
+
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+.dark {
+  font-size: 23px;
+  background-color: white;
+  color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.light-theme {
+  background-color: #f3faff;
+  color: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+.barger {
+  display: none;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1180px) {
+  .barger {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    font-size: 23px;
+  }
+
+  .btn {
+    font-size: 23px;
+  }
+  .logo {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+
+    z-index: 9999;
+  }
+  input {
+    width: 150%;
+  }
+  .relative {
+    left: 310px;
+    bottom: 67px;
+  }
+  .absolute {
+    right: -90px;
+  }
+  .dark {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    height: 40px;
+    width: 40px;
+  }
+
+  nav ul {
+    overflow: hidden;
+    display: none;
+    padding: 50px 0px;
+    width: 85%;
+    text-align: center;
+    flex-direction: column;
+    /* background-color: black; */
+  }
+
+  nav ul li {
+    margin: 30px;
+  }
+
+  nav ul.active {
+    display: block;
+    z-index: 10;
+  }
+ 
+
+  .navlink {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .relative {
+    left: 250px;
+   
+  }
+}
+@media only screen and (max-width: 680px){
+  .relative {
+    left: 200px;
+    
+  }
+}
+@media only screen and (max-width: 550px){
+  input {
+    width: 100%;
+  }
+  .relative {
+    left: 150px;
+    
+  }
+  .absolute {
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 450px){
+  input {
+    width: 80%;
+  }
+  .relative {
+    left: 105px;
+   
+  }
+  .absolute {
+    right: 45px;
+  }
+}
